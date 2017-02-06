@@ -188,7 +188,7 @@ body {
   background-position: -3px -70px;
 }
 .entry-form__item--scan::before {
-  background-position: -3px -418px;
+  background-position: -3px -419px;
 }
 .entry-form__label {
   position: relative;
@@ -217,7 +217,7 @@ body {
 }
 .entry-form__container {
   width: 82.12%;
-  padding-left: 158px;
+  padding-left: 27.05%;
   box-sizing: border-box;
 }
 .entry-form__item-title {
