@@ -13,6 +13,18 @@ var minify = require('gulp-minify');
 var server = require("browser-sync");
 var run = require("run-sequence");
 
+gulp.task("less", function() {
+  gulp.src("less/style.less")
+  .pipe(less())
+  .pipe(gulp.dest("css"));
+});
+
+gulp.task("watch", function() {
+  gulp.watch('less/**', function(event) {
+      gulp.run('less');
+  });
+});
+
 gulp.task("style", function() {
   gulp.src("less/style.less")
     .pipe(less())

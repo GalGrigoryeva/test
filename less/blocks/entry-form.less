@@ -45,21 +45,11 @@
 
 .entry-form__item {
   position: relative;
-  display: block;
-  min-height: 194px;
-  margin-left: 28px;
-  padding-top: 29px;
-  padding-bottom: 28px;
-  box-sizing: border-box;
-
-  border-top: 1px solid #e5e5e5;
-
-  &:first-child {
-    border-top: none;
-  }
 
   &::before {
     position: absolute;
+    top: 28px;
+    left: 4.375%; // 28 / 640 = 4.375%
     content: "";
     width: 132px;
     height: 132px;
@@ -72,8 +62,30 @@
   }
 
   &--scan::before {
-    background-position: -3px -419px;
+    background-position: -3px -418px;
   }
+}
+
+.entry-form__label {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 194px;
+  padding: 29px 28px;
+  box-sizing: border-box;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    width: 95.625%; // 612 / 640 ~= 95.625%
+    height: 1px;
+
+    background-color: #e5e5e5;
+  }
+
 }
 
 .entry-form__label:hover {
@@ -120,10 +132,6 @@
 }
 
 .entry-form__checkbox-indicator {
-  position: absolute;
-  top: 80px;
-  right: 32px;
-  display: block;
   width: 44px;
   height: 44px;
   box-sizing: border-box;
