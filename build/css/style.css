@@ -40,6 +40,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .page-header__logo {
   padding-top: 28px;
@@ -188,13 +189,14 @@ body {
   background-position: -3px -70px;
 }
 .entry-form__item--scan::before {
-  background-position: -3px -418px;
+  background-position: -3px -419px;
 }
 .entry-form__label {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   min-height: 194px;
   padding: 29px 28px;
   box-sizing: border-box;
@@ -217,7 +219,7 @@ body {
 }
 .entry-form__container {
   width: 82.12%;
-  padding-left: 158px;
+  padding-left: 27.05%;
   box-sizing: border-box;
 }
 .entry-form__item-title {
